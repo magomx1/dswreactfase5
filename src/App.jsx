@@ -23,7 +23,7 @@ function App() {
         <a href="inicio.html">Click para ingresar al proyecto</a>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Mayo 2023
       </p>
     </>
   )
