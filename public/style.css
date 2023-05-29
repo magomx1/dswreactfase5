@@ -1,0 +1,244 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%; 
+    vertical-align: baseline;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+        'A A A A'
+        'B B B B'
+        'C D D D'
+        'E E E E';
+} 
+
+header {
+    grid-area: A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh !important; 
+    background: url(img\header.png) no-repeat center;/*Imágen de fondo del encabezado*/
+    background-size: cover; /*Cubrir toda la pantalla*/
+    flex-direction: column;      
+}
+
+nav {
+    grid-area: B;
+    background-color:#1d1d1f;
+}
+
+aside {
+    display: flex;
+    grid-area: C;
+    background-color:#decade;
+    text-decoration: none;
+    padding: 30px;
+    margin-right: 20px;
+    
+}
+
+main {
+    grid-area: D;
+    background-color:#010101;
+}
+
+footer {
+    grid-area: E;
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    margin-right: 20px;   
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    background: #3f3f3f; /*Cambiar color al ubicarse en menús */
+}
+
+body {
+    text-align: center; /* Todo el texto alineado al centro */
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background: #171717;
+    /*position: fixed; /* El menú quedará inmovilizado */
+    width: 100%;
+    z-index: 100;/* se ubica delante de cualquier otro elemento */
+}
+
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.title { /*Estilo de títulos*/
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #150938;
+    color: #fff;
+    text-decoration: none;
+    background: #150938;
+}
+
+.btn:hover {
+    background: none;    
+}
+.box1 {
+    background-color: #f7f4f4;
+    color: #fff;
+    opacity: .10;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #b2a0a0;
+}
+
+p { /*Estilo de párrafos*/
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+ul{
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5%;
+    padding: 5%;
+    list-style: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxm {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background: #1f1d1d
+}
+
+.box-container {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box { /*Afectando ambas clases*/
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem; /*Tamaño bordes redondeados*/
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;   
+}
+
+.mock {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(img/back.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(img/header.png) no-repeat center;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.about2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    background: url(img/header.png) no-repeat center;
+}
+
+
+.form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(img/header.png) no-repeat center;
+    text-align: left;
+    color:#ffffff;
+}
+
+.contact {
+    
+    padding-top: 5px;
+    background: #171717;
+    text-align: center;
+    display: flex;
+    
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .boxm {
+        height: 100vh;
+    }
+    .navbar {
+        display: none;
+    }
+       
+}

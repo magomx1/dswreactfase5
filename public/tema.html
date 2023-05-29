@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fase 5</title>
+    
+</head>
+<body class="contenedor">
+  <header>
+    
+    <h1> Fase 5 - Operar</h1>
+    
+  </header>  
+  <nav class="head">
+    
+    <div class="logo">
+         <a href="#">Fase 5</a>
+    </div>
+    <!-- Estableciendo elementos del menú y links respectivos -->
+         <nav class="navbar"> 
+          <a href="index.html">Inicio</a>
+          <a href="tema.html">Tema</a>
+          <a href="cuestionario.html">Cuestionario</a>
+          <a href="nosotros.html">Nosotros</a>
+         </nav>
+     </div>
+  </nav>
+  
+  
+<a name="section1"></a>
+  <aside>
+    
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="audio.html">Audio</a></li>
+      <li><a href="cuestionario.html">Cuestionario</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+
+  </aside>
+
+  <main>
+    <header class="header">
+      <h1>Conociendo que es el Box Model</h1>
+      <p>Todo en CSS tiene un cuadro a su alrededor, y comprender 
+          estos cuadros es clave para poder crear diseños más complejos 
+          con CSS o para alinear elementos correctamente.</p>
+ </header>
+ <section class="content boxm">
+  </section>
+  
+  <section class="content boxm">
+      <h2 class="title"></h2>
+      <h2 class="title">Box Model</h2>
+      <p>Al diseñar un documento, el motor de representación de todos los navegadores representa cada elemento como un cuadro 
+           rectangular. En CSS, el término "Box Model"(Modelo de Caja) se usa cuando se habla de diseño. Las pautas del modelo de 
+           caja están descritas por los estándares web World Wide Web Consortium (W3C).</p>
+      <p><b>Historia del Box Model </p>
+       <p>El box model se introdujo en 1996 después de que se añadieran márgenes, bordes y relleno a más elementos. Antes de HTML 4 y CSS, muy pocos elementos HTML admitían tanto bordes como padding, por lo que la definición del ancho y el alto de un elemento no era tan esencial como ahora. </p>
+       <p>Después de 1996, CSS adoptó una definición de ancho en relación con el contenido, el borde(border), el margen (margin) y el relleno (padding) similar a la celda de una tabla. Desde entonces, se conoce como el box model W3C. Desde el lanzamiento de CSS3, ahora se conoce como content-box. De acuerdo con la especificación CSS1, publicada por W3C en 1996 y revisada en 1999, cuando se especifica explícitamente un ancho o alto para cualquier elemento a nivel de bloque, debe determinar solo el ancho o el alto del elemento visible, con el padding, los bordes y márgenes aplicados posteriormente. Entonces, para calcular el ancho o alto total del elemento, cada uno de los valores individuales deben sumarse.</p>
+      <br>
+      <p>El Box Model CSS es esencialmente una caja que envuelve cada elemento HTML. Este consta de:</p>
+      <div class="box-container">
+          <div class="box">
+              <ul>
+                  <li>Conent</li>
+                  <li>Padding</li>
+                  <li>Border</li>
+                  <li>Margin</li>
+              </ul>
+          </div>
+          <div class="box">
+              <figure><img src="img/boxmodel.png" height="220px" width="130%" alt="box"></figure>  
+          </div>
+      </div>
+      <br>
+      <p><b>Content box:</b> El área del content (como su nombre lo dice) contiene el “contenido” central a mostrar, es decir, un texto, una imagen, un video, etc. El contenido siempre es lo que queremos mostrarle al usuario. 
+          Esta área en muchas ocasiones tiene un color o imagen de fondo para hacerla más atractiva. Es el area donde se muestra el contenido, ya sea texto, imágenes, videos, etc. Este elemento se dimensiona usando
+          propiedades como "inline-size" y "block-size" o "width" y "height".</p>   
+      <p><b>Padding box:</b> El padding es una separación o espacio interior que existe entre el contenido y el borde de la caja, el cual se utiliza para dar una apariencia estética más atractiva y que el contenido no este pegado al borde.
+          Cabe mencionar que el padding sigue siendo parte de la caja visible, por lo que, 
+          si tenemos una imagen o color de fondo, este se extenderá a través del padding, esta parte se dimensiona utilizando "padding" y propiedades relacionadas.</p>     
+      <p><b>Border box:</b> El borde es la línea que rodea la caja, es como la frontera que rodea al elemento, esta se utiliza para darle una apariencia estética a la caja, pues nos permite dibujar una línea de algún color. Se dimensiona utilizando la propiedad "border" y propiedades relacionadas.</p>     
+      <p><b>Margin box:</b> El margen es la última área del Box Model y se puede ver como una separación invisible o transparente que ayuda a separar un elemento de otro. Cuando definimos un color o imagen de fondo, 
+          este no se propaga a esta sección. Las márgenes siempre quedan fuera del modelo de caja, por lo que pueden utilizarse para crear espacio entre los elementos.La margen es la capa mas externa, encerrando las anteriores con un espacio en blan que delimita la caja y los demas elementos de la página. 
+          Se dimensiona usando la propiedad "margin" y propiedades relacionadas</p>     
+  
+  </section>
+                
+ 
+  <section class="content mock">
+      <h2 class="title">Mockup</h2>
+      <figure><img src="img/mockup.png" height="500px" width="100%" alt="box"></figure> 
+      <a href="https://drive.google.com/file/d/1OjKFBLOs3UhR3fYSfC6vVQ_v_nWahNwy/view?usp=sharing" target="_blank">Link Mockup</a>
+  </section>
+  
+  <section class="content about">
+      <h2 class="title">Acerca de</h2>
+      <h1> Bienvenido a mi sitio web</h1>
+      <h2> Proyecto de sitio Web 2023 - 1604</h2>
+      <h3> Mauricio Gómez Flórez</h3>
+      <h3> Ingeniería de Sistemas</h3>
+      <h3> 11/03/2023</h3>
+      <p> Datos de contacto: <br>
+          Skype: magomx1 <br>
+          3106676289 <br>
+          mgomezfl@unadvirtual.edu.co <br>            
+      </p>       
+      
+  </section>
+  </main>
+
+  <footer class="contact">
+    <p>© 2023 Mauricio Gómez Flórez, Inc. Last update: 14/05/2023</p>
+  </footer>
+
+
+</body>
+</html>
