@@ -20,7 +20,7 @@ function App() {
       <div className="card">
         <h3>Mauricio Gómez Flórez</h3>
         <h6>Enlace al proyecto web</h6>
-        <a href="index.html">Click para ingresar al proyecto</a>
+        <a href="inicio.html">Click para ingresar al proyecto</a>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
